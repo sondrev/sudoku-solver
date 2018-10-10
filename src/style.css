@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size:40px;
+}
+
+button {
+  margin: 30px 10px;
+  width: 140px;
+  height: 80px;
+  font-size: 25px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+table {
+  margin:auto;
+  border-collapse: collapse;
+}
+
+td {
+  font-weight: bold;
+  background-color:white;
+  transition: background-color 0.5s;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.font--small {
+  font-weight: normal ;
+  font-size: 10px;
+}
+
+.left {
+  border-left-width: 2px;
+}
+
+.right {
+  border-right-width: 2px;
+}
+
+.top {
+  border-top-width: 2px;
+}
+
+.bottom {
+  border-bottom-width: 2px;
+}
+
+.highlight--yellow {
+  background-color: #eaf319;
+}
+
+.highlight--yellow--dimmed {
+  background-color: #f7f9c2;
+}
+
+p {
+  max-width: 500px;
+  margin: auto;
+  font-size: 20px;
+}
