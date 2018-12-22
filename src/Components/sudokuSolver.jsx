@@ -237,10 +237,16 @@ class SudokuSolver extends Component {
         this.guide.setStep(step);
     }
 
+    reset() {
+        this.board.resetValues(startingValues);
+        haveFilledAllCandidates=false;
+    }
+
     render() {
         return (
             <div>
                 <Board onRef={ref => (this.board = ref)} values={startingValues} />
+                <button onClick={() => this.reset()}>Reset</button>
                 <button onClick={() => this.solveOneStep()}>Next step</button>
                 <button onClick={() => this.solveAll()}>Solve All</button>
                 <Guide

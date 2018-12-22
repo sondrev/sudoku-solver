@@ -26,6 +26,16 @@ class Board extends Component {
     this.props.onRef(undefined);
   }
 
+  resetValues(values) {
+    values.forEach((row, rowIndex) =>
+    row.forEach((value, index) => {
+      this.getCellAt(index,rowIndex).setSolution(value)
+      this.getCellAt(index,rowIndex).setCandidates([])
+      this.getCellAt(index,rowIndex).clearHighlight()
+    }
+    ))
+  }
+
   getCellAt(col, row) {
     return this.cellRefs[col + row * 9];
   }
